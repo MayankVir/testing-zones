@@ -18,13 +18,13 @@ const nextConfig = {
       },
     ];
   },
-  redirects: [
-    {
-      source: "/blog/",
-      destination: "/blog",
-      permanent: false,
-    },
-  ],
+  // redirects: [
+  //   {
+  //     source: "/blog/",
+  //     destination: "/blog",
+  //     permanent: false,
+  //   },
+  // ],
 };
 
 module.exports = nextConfig;
