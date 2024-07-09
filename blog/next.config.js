@@ -2,6 +2,7 @@
 const nextConfig = {
   basePath: "/blog",
   trailingSlash: true,
+  cleanUrls: true,
 };
 
 module.exports = nextConfig;
