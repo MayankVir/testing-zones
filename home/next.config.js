@@ -25,7 +25,7 @@ const nextConfig = {
         headers: [
           {
             key: "x-forwarded-host",
-            value: "https://testing-zones-idmw.vercel.app",
+            value: "https://blog.getarchieai.com",
           },
         ],
       },
