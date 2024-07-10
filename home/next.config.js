@@ -21,11 +21,20 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: "/blog",
+        headers: [
+          {
+            key: "x-forwarded-host",
+            value: "https://testing-zones-idmw.vercel.app",
+          },
+        ],
+      },
+      {
         source: "/blog/:path*",
         headers: [
           {
             key: "x-forwarded-host",
-            value: "https://testing-zones-idmw.vercel.app/",
+            value: "https://testing-zones-idmw.vercel.app",
           },
         ],
       },
