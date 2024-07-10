@@ -18,6 +18,19 @@ const nextConfig = {
       },
     ];
   },
+  async headers() {
+    return [
+      {
+        source: "/blog/:path*",
+        headers: [
+          {
+            key: "x-forwarded-host",
+            value: "https://testing-zones-idmw.vercel.app",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
