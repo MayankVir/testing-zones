@@ -25,7 +25,7 @@ const nextConfig = {
         headers: [
           {
             key: "x-forwarded-host",
-            value: "https://blog.getarchieai.com",
+            value: "https://blog.getarchieai.com/",
           },
         ],
       },
