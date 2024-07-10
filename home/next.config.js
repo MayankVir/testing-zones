@@ -2,6 +2,7 @@ const { BLOG_URL } = process.env;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  trailingSlash: true,
   async rewrites() {
     return [
       {
@@ -25,7 +26,7 @@ const nextConfig = {
         headers: [
           {
             key: "x-forwarded-host",
-            value: "https://blog.getarchieai.com/",
+            value: "https://getarchieai.com",
           },
         ],
       },
