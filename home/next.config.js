@@ -13,8 +13,16 @@ const nextConfig = {
         destination: `${BLOG_URL}/blog`,
       },
       {
+        source: "/blog/",
+        destination: `${BLOG_URL}/blog/`,
+      },
+      {
         source: "/blog/:path*",
         destination: `${BLOG_URL}/blog/:path*`,
+      },
+      {
+        source: "/blog/:path*/",
+        destination: `${BLOG_URL}/blog/:path*/`,
       },
     ];
   },
